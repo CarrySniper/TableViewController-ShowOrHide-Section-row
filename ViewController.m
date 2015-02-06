@@ -33,16 +33,18 @@
     
     
     self.tableView.tableFooterView = [[UIView alloc]init];
+    
+    
     _sectionArray = [NSArray arrayWithObjects:@"好友",@"家人",@"朋友",@"同学",@"陌生人",@"黑名单", nil];
     
-    _rowArray = [NSArray arrayWithObjects:@"aaaa",@"aaaa",@"aaaa",@"aaaa",@"aaaa", nil];
+    _rowArray = [NSArray arrayWithObjects:@"张三",@"李四",@"王五",@"未命名",@"未命名", nil];
+    
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return [_sectionArray count];
 }
 
@@ -51,18 +53,17 @@
     return [_rowArray count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"这个自己命名，最好一个工程里面的不要有相同的"];
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"这个自己命名"];
     if(cell==NULL){
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"这个自己命名，最好一个工程里面的不要有相同的"];
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"这个自己命名"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.separatorInset=UIEdgeInsetsZero;
         cell.clipsToBounds = YES;
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"第 %ld 行",indexPath.row];
     
+    cell.textLabel.text = [NSString stringWithFormat:@"第 %ld 行： %@",indexPath.row,_rowArray[indexPath.row]];
     
     return cell;
 }
