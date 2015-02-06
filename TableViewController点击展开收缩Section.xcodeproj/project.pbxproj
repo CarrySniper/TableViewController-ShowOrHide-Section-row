@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5AE26241A84B68800C4DB28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AE26231A84B68800C4DB28 /* ViewController.m */; };
 		C5E9A00B1A84B6570023006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E9A00A1A84B6570023006A /* Foundation.framework */; };
 		C5E9A00D1A84B6570023006A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E9A00C1A84B6570023006A /* CoreGraphics.framework */; };
 		C5E9A00F1A84B6570023006A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E9A00E1A84B6570023006A /* UIKit.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5AE26221A84B68800C4DB28 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C5AE26231A84B68800C4DB28 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C5E9A0071A84B6570023006A /* TableViewController点击展开收缩Section.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableViewController点击展开收缩Section.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E9A00A1A84B6570023006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5E9A00C1A84B6570023006A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +80,8 @@
 		C5E99FFE1A84B6560023006A = {
 			isa = PBXGroup;
 			children = (
+				C5AE26221A84B68800C4DB28 /* ViewController.h */,
+				C5AE26231A84B68800C4DB28 /* ViewController.m */,
 				C5E9A0101A84B6570023006A /* TableViewController点击展开收缩Section */,
 				C5E9A0291A84B6570023006A /* TableViewController点击展开收缩SectionTests */,
 				C5E9A0091A84B6570023006A /* Frameworks */,
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AE26241A84B68800C4DB28 /* ViewController.m in Sources */,
 				C5E9A01B1A84B6570023006A /* AppDelegate.m in Sources */,
 				C5E9A0171A84B6570023006A /* main.m in Sources */,
 			);
@@ -437,6 +443,7 @@
 				C5E9A0351A84B6570023006A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5E9A0361A84B6570023006A /* Build configuration list for PBXNativeTarget "TableViewController点击展开收缩SectionTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +452,7 @@
 				C5E9A0381A84B6570023006A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
